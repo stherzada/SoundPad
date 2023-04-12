@@ -1,0 +1,88 @@
+:root {
+  --cinza: #aaa;
+  --rosa: #E11299;
+  --branca: #fff;
+  --luz: #9A208C;
+}
+
+
+body {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+} 
+
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #FDF4F5 10%,#E8A0BF 40%, #BA90C6 100%, #C0DBEA 60%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  animation: gradient 5s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #F5C6EC 0%,#F5C6EC 100%);
+  box-shadow: 6px 8px 0 6px #E11299, 20px 20px 20px #4E31AA;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--rosa);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.60em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--rosa);
+  border: 4px solid  var(--rosa);
+  box-shadow: 3px 3px 0 var(--rosa) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--rosa) inset, 1px 1px 10px var(--luz);
+}
