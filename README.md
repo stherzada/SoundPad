@@ -1,7 +1,7 @@
 # SoundPad
 
 ### 📍 Por quê do Projeto?
-- Esssa ideia surgiu como aprendizado para conhecer mais algumas algumas funcionalidades do DOM e utilizando o caso de switch case para as teclas.
+- Essa ideia surgiu como aprendizado para conhecer mais algumas algumas funcionalidades do DOM e utilizando o caso de switch case para as teclas.
 
 ![Título Stherzada Sounds, alguns botões cliclavéis, com alguns título](https://i.imgur.com/zLTZfvX.png)
 
